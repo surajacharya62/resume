@@ -35,16 +35,50 @@ Start Content
   <div class="innerPageBannerCol">
     <div class="container">
       <div class="row g-4 g-md-3  align-items-center">
-        <div class="col-md-6">
+        <div class="col-md-12">
           <div class="bannerContent">
             <h1 class="xlTitle pb-md-3">See my recent projects below</h1>
-          </div>
-        </div>
+          </div>          
+        </div>       
       </div>
-    </div>
+      
+  </div>
+
+  <div>
+
+    <div class="lightBg">
+      <div class = "container">
+        <ul>
+          <li class="smText pb-md-3">Prediction of Heart Disease - <a href="https://github.com/surajacharya62/HeartDiseasePrediction/blob/main/HeartDiseasePrediction.ipynb" class="btn btnOutline"> View</a> </li> 
+        </ul>
+        <ul>
+          <li class="smText pb-md-3">Prediction of age on EEG Signals data using Transfer Learning - <a href="https://github.com/surajacharya62/Predicting-Age-using-Transfer-Learning-on-EEG-brain-signal/blob/main/Main%20Final_project.ipynb" class="btn btnOutline"> View</a> </li> 
+        </ul>
+        <ul>
+          <li class="smText pb-md-3">Employee performance analysis - <a href="https://github.com/surajacharya62/EmployeePerformanceAnalysis/blob/main/Employee_Performance_Analysis_IABAC.ipynb" class="btn btnOutline"> View</a> </li> 
+        </ul>
+      </div>
+  </div>
+  </div>
   </div>
 </section>
 
+<!-- <section>
+  <div class="lightBg">
+      <div class = "container">
+        <ul>
+          <li class="smText pb-md-3">Prediction of Heart Disease - <a href="https://github.com/surajacharya62/HeartDiseasePrediction/blob/main/HeartDiseasePrediction.ipynb" class="btn btnOutline"> View</a> </li> 
+        </ul>
+        <ul>
+          <li class="smText pb-md-3">Prediction of age on EEG Signals data using Transfer Learning - <a href="https://github.com/surajacharya62/HeartDiseasePrediction/blob/main/HeartDiseasePrediction.ipynb" class="btn btnOutline"> View</a> </li> 
+        </ul>
+        <ul>
+          <li class="smText pb-md-3">Employee performance analysis - <a href="https://github.com/surajacharya62/HeartDiseasePrediction/blob/main/HeartDiseasePrediction.ipynb" class="btn btnOutline"> View</a> </li> 
+        </ul>
+      </div>
+  </div>
+</section> -->
+<!-- 
 <section>
   <div class="lightBg">
     <div class="container">
@@ -53,8 +87,8 @@ Start Content
           {% for obj in object_list %}
           <div class="col-md-6 pColMain">
             <div class="pCol">
-              <a href="{% url 'main:portfolio' slug=obj.slug %}" >
-              <img src="{{obj.image.url}}" alt="..." class="pImg">
+              <a href="{% url 'main:portfolio' slug=obj.slug %}" > {{ obj.name}}
+              <img src="{{obj.image.url}}" alt=".khkjh.." class="pImg">
               </a>
             </div>
           </div>
@@ -64,7 +98,7 @@ Start Content
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- ================================
 End Content
 ================================= -->

@@ -10,7 +10,7 @@ class Skill(models.Model):
         verbose_name = 'Skill'
 
     
-    name = models.CharField(max_length=100, blank=True, null=True)
+    name = models.CharField(max_length=150, blank=True, null=True)
     score = models.IntegerField(default=80,blank=True, null= True)
     image = models.FileField(blank=True, null= True, upload_to= "skills")
     is_key_skill = models.BooleanField(default= False)
@@ -166,7 +166,7 @@ class Experience(models.Model):
 
     start_date = models.DateField(blank=False)
     end_date = models.DateField(blank=True,null = True)
-    company_name = models.CharField(max_length=50, blank=True, null=True)
+    company_name = models.CharField(max_length=100, blank=True, null=True)
     job_title = models.CharField(max_length=200, blank=True, null=True)
     description = models.CharField(max_length=1000, blank=True, null=True)
     is_active = models.BooleanField(default=True)

@@ -35,20 +35,30 @@ Start Content
   <div class="bannerSection">
     <div class="container">
       <div class="row g-4 g-md-3  align-items-center">
-        <div class="col-md-auto order-md-last">
+        <!-- <div class="col-md-auto order-md-last">
           <div class="bannerUserImg">
             <img src="{{me.userprofile.username.url}}" alt="{{me.first_name|title}} {{me.last_name|title}} avatar">
           </div>
-        </div>
+        </div> -->
         <div class="col-md">
-          <div class="bannerContent">
-            <h1 class="xlTitle pb-3">Hi, my name is Suraj Acharya {{me.first_name|title}}, <br> a {{me.userprofile.title}} </br></h1>
-            <p>{{me.userprofile.bio}}</p>
-            <div class="bannerBtnCol">
+          <div class="bannerContent" style="text-justify: inter-word;">
+            <h1 class="smTitle pb-3" >
+              I view my career as more than just a job, it's a platform for personal development and growth. With every step,
+              I am not only building a career, but also nurturing the best version of myself. 
+            
+            </h1>
+            <!-- Hi, my name is Suraj Acharya {{me.first_name|title}}, <br> a {{me.userprofile.title}} </br> -->
+            <p> 
+            <!-- Hi, my name is Suraj Acharya. {{me.userprofile.bio}} -->
+            Hi, my name is Suraj Acharya. Three years of practical experience as a SQL and BI developer having analyzed complex datasets, identified trends, and provided useful insights. 
+            Strong in SQL query optimization and data-driven decision-making. Additionally, my expertise extends to designing predictive models using statistical modeling and machine learning algorithms, coupled with a strong background in programming, data manipulation, and data visualization.
+             As a highly motivated and analytically minded data enthusiast, my goal is to apply my combined knowledge of Data Engineering and Data Scientist to help the organization succeed in an increasingly data-centric world by contributing to data-driven decision-making processes, encouraging creativity, and empowering them to innovate.
+            </p>
+             <div class="bannerBtnCol">
               <div class="row">
-                <div class="col-auto">
+                <!-- <div class="col-auto">
                   <a download href="{{me.userprofile.cv.url}}" class="btn btnPrimary">Download Resume</a>
-                </div>
+                </div> -->
                 <div class="col-auto">
                   <a href="{% url 'main:contact' %}" class="btn btnOutline">Contact</a>
                 </div>
@@ -97,9 +107,9 @@ Start Content
                       <div class="progress-bar" role="progressbar" style="width: {{sk.score}}%" aria-valuenow="{{sk.score}}" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                   </div>
-                  <div class="col-auto">
+                  <!-- <div class="col-auto">
                     <span class="pLbl">{{sk.score}}%</span>
-                  </div>
+                  </div> -->
                 </div>
               </div>
               
@@ -194,8 +204,8 @@ Start Content
 
 
 
-
-
+<!-- bottom section -->
+<!-- 
 <section>
   <div class="sectionSpace">
     <div class="container">
@@ -301,7 +311,7 @@ Start Content
       </div>
     </div>
   </div>
-</section>
+</section> -->
 {% endblock %}
 <!-- ================================
 End Content
