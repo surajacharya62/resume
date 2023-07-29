@@ -42,8 +42,8 @@ class ContactView(generic.FormView):
 	
 	def form_valid(self, form1):
 		form1.save()
-		messages.success(self.request, 'Thank you. We will be in touch soon.')
-		# return super().form_valid(form1)
+		messages.success(self.request, 'Thank you. I will be in touch soon.')
+		return super().form_valid(form1)
 
 
 class PortfolioView(generic.ListView):
